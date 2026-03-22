@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente Drogue - UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/index.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index.css">
+</head>
+<body>
+    <div id="app" class="hidden">
+        <h1 class="title">Vente</h1>
+        
+        <div class="item-card">
+            <div class="item-quantity" id="itemQuantity"></div>
+            <img src="" alt="Item" id="itemImage" onerror="this.src='https://placehold.co/75x75/581c87/ffffff?text=?'">
+            <div class="item-name" id="itemName"></div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-header">
+                <span class="slider-label">Prix de vente:</span>
+                <span class="slider-value" id="priceValue">$108</span>
+            </div>
+            <input type="range" id="priceSlider" min="50" max="250" value="108">
+        </div>
+
+        <div class="chance-container">
+            <div class="chance-label">Chance de réussite:<span id="chanceValue" class="chance-percent">100%</span></div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="chanceFill"></div>
+            </div>
+        </div>
+
+        <button id="sellButton" class="sell-btn">
+            💼 Vendre
+        </button>
+    </div>
+    
+</body>
+</html>
+
